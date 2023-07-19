@@ -80,7 +80,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: blue;
+  background: darkblue;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -119,10 +119,10 @@ body {
 
 .logo {
   position: absolute;
-  top: -5px; 
+  top: -5px; /* this is optional */
   right: 15px;
   font-size: 1.2rem;
-  color: #0e2431;
+  color: #0e2431; /* Not needed but in case we want to keep it as the name "Goodwill" instead of the logo */
 }
 
 img {
@@ -150,8 +150,8 @@ img {
 }
 
 footer {
-  background-color: black;
-  color: #ffffff;
+  background-color: rgba(0, 0, 139, 1);
+  color: rgba(255, 255, 255, 1);
   padding: 20px;
   text-align: center;
 }
