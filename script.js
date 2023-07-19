@@ -11,7 +11,8 @@ const getAirtableData = async () => {
       };
     try {
         const response = await fetch(`https://api.airtable.com/v0/appPABgKKuNzeb4l6/Trainees`, options);
-        const Data = await response.json();
+        const data = await response.json();
+        console.log(data)
         
 
     } catch(error) {
@@ -19,4 +20,4 @@ const getAirtableData = async () => {
     }
 }
 
-console.log(getAirtableData());
+getAirtableData();
