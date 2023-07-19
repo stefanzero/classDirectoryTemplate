@@ -80,7 +80,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.9);
+  background: blue;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -119,6 +119,7 @@ body {
 
 .logo {
   position: absolute;
+  top: -5px; 
   right: 15px;
   font-size: 1.2rem;
   color: #0e2431;
