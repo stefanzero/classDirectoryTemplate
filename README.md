@@ -20,3 +20,27 @@ This is a basic static HTML starter project you can build on however you like. N
 
 - Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
 - Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+
+
+## The Airtable Fetch Code 
+````
+const getAirtableData = async () => {
+    const options = {
+        method: 'GET',
+        headers: {
+          Authorization: `Bearer patwSsvy7Hvo5mSGS.9799e293a34039bfd554077a19779c0bc8b47f161fcda595acaa76f6b26ee9a4`
+        }
+      };
+    try {
+        const response = await fetch(`https://api.airtable.com/v0/appPABgKKuNzeb4l6/Trainees`, options);
+        const Data = await response.json();
+        
+
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+console.log(getAirtableData());
+
+```
