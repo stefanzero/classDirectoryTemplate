@@ -80,7 +80,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #0e2431;
+  background: rgba();
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -123,6 +123,10 @@ body {
   right: 15px;
   font-size: 1.2rem;
   color: #0e2431;
+}
+
+img {
+  width: 50px;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
