@@ -1,4 +1,3 @@
-/*CSS RESET*/
 * {
   --main-bg-color-light:;
   --main-bg-color-dark:;
@@ -9,16 +8,16 @@
   --secondary-font-style:;
   
   --font-size-mobile:1rem;
-  --font-size-tablet:1.2rem;
-  --font-size-desktop:1.8rem;
+  --font-size-tablet:1.1rem;
+  --font-size-desktop:1.2rem;
   
+  /*CSS RESET*/
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  /*END OF CSS RESET*/
 }
 
-body {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
 
 /*GLOBAL SCOPE*/
 .container {
@@ -32,15 +31,19 @@ body {
 /*MOBILE PHONES*/
 @media only screen and (max-width: 480px) {
   .container {
-    font-size:var(--font-size-);
+    font-size:var(--font-size-mobile);
     background-color:yellow;
   }
 
 }
+
+
+
+
 /* TABLETS */
 @media only screen and (min-width: 480px) {
   .container {
-    font-size:var(--font-size-mobile);
+    font-size:var(--font-size-tablet);
     background-color:orange;
   }
   
@@ -54,7 +57,7 @@ body {
 @media only screen and (min-width: 768px) {
 
   .container {
-    font-size:var(--font-size-mobile);
+    font-size:var(--font-size-desktop);
     background-color:teal;
   }
 }
