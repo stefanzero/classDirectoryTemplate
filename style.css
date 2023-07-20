@@ -1,12 +1,9 @@
 /*GLOBAL SCOPE*/
 * {
-  --main-bg-color-light:#FDFDFD;
-  --main-bg-color-dark:#0052A3;
-  --main-font-color-light: ;
+  --main-bg-color-light:#b6b2a5;
+  --main-bg-color-dark:#081831;
+  --main-font-color-light:#fdfdfd;
   --main-font-color-dark:#020202;
-
-  --main-font-style: ;
-  --secondary-font-style: ;
 
   --font-size-mobile: 1rem;
   --font-size-tablet: 1.1rem;
@@ -20,6 +17,9 @@
   padding: 0;
   box-sizing: border-box;
   /*END OF CSS RESET*/
+  
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
