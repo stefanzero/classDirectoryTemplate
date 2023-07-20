@@ -1,0 +1,18 @@
+/*MOBILE PHONES*/
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+}
+/* SMALL DEVICES (TABLETS AND LARGE PHONES, 600px +) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+/* DESKTOPS */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: black;
+  }
+}
