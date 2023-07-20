@@ -1,18 +1,41 @@
+/*CSS RESET*/
+body {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.container {
+  max-width:1500px;
+  height:100vh;
+  margin:0 auto
+}
+
+
+
 /*MOBILE PHONES*/
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-  }
+  .container {
+    background-color:yellow;
 }
-/* SMALL DEVICES (TABLETS AND LARGE PHONES, 600px +) */
+
+
+/* TABLETS AND LARGE PHONES */
 @media only screen and (min-width: 600px) {
-  body {
-    background-color: red;
+  .container {
+    background-color:orange;
   }
+  
 }
+
+
+
+
+
 /* DESKTOPS */
 @media only screen and (min-width: 992px) {
-  body {
-    background-color: black;
+
+  .container {
+    background-color:teal;
   }
 }

@@ -1,7 +1,6 @@
 /* This will be our code to fetch data from Airtable to our Glitch. 
   PLEASE DO NOT CHANGE WITHOUT CONSULTING --> INSTRUCTOR
 */
-
 const getAirtableData = async () => {
     const options = {
         method: 'GET',
@@ -21,3 +20,6 @@ const getAirtableData = async () => {
 }
 
 getAirtableData();
+
+/* Function to dynamically change the year date of the foo
+*/
