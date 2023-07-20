@@ -21,5 +21,11 @@ const getAirtableData = async () => {
 
 getAirtableData();
 
-/* Function to dynamically change the year date of the foo
-*/
+
+
+/* Function to change theme {Dark | Light}.*/
+
+/* Function to dynamically change the year date of the footer.*/
+
+
+/* Function to loop over students testimonials - footer.*/

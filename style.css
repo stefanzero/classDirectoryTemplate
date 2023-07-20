@@ -1,10 +1,26 @@
 /*CSS RESET*/
+* {
+  --main-bg-color-light:;
+  --main-bg-color-dark:;
+  --main-font-color-light:;
+  --main-font-color-dark:;
+  
+  --main-font-style:;
+  --secondary-font-style:;
+  
+  --font-size-mobile:1rem;
+  --font-size-tablet:1.2rem;
+  --font-size-desktop:1.8rem;
+  
+}
+
 body {
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 
+/*GLOBAL SCOPE*/
 .container {
   max-width:1500px;
   height:100vh;
@@ -14,15 +30,17 @@ body {
 
 
 /*MOBILE PHONES*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .container {
+    font-size:var(--font-size-);
     background-color:yellow;
+  }
+
 }
-
-
-/* TABLETS AND LARGE PHONES */
-@media only screen and (min-width: 600px) {
+/* TABLETS */
+@media only screen and (min-width: 480px) {
   .container {
+    font-size:var(--font-size-mobile);
     background-color:orange;
   }
   
@@ -32,10 +50,11 @@ body {
 
 
 
-/* DESKTOPS */
-@media only screen and (min-width: 992px) {
+/* LAPTOPS | DESKTOPS */
+@media only screen and (min-width: 768px) {
 
   .container {
+    font-size:var(--font-size-mobile);
     background-color:teal;
   }
 }
