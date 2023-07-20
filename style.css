@@ -3,7 +3,7 @@
   --main-bg-color-light:#FDFDFD;
   --main-bg-color-dark:#0052A3;
   --main-font-color-light: ;
-  --main-font-color-dark: ;
+  --main-font-color-dark:#020202;
 
   --main-font-style: ;
   --secondary-font-style: ;
@@ -11,6 +11,9 @@
   --font-size-mobile: 1rem;
   --font-size-tablet: 1.1rem;
   --font-size-desktop: 1.2rem;
+  
+  --link-color-hover:;
+  --link-color:;
 
   /*CSS RESET*/
   margin: 0;
@@ -30,6 +33,7 @@
   .container {
     font-size: var(--font-size-mobile);
     background-color: var(--main-bg-color-light);
+    color: var(--main-font-color-dark)
   }
 }
 
