@@ -17,7 +17,9 @@ const getAirtableData = async () => {
     const data = await response.json();
     console.log(data);
     for (var i = 0; i < data.records.length; i++) {
-    console.log(i);
+      console.log(data.records[i].fields.name);  
+      console.log(data.records[i].fields.email);
+    
     }
   } catch (error) {
     console.log(error);
