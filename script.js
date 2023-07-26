@@ -16,12 +16,17 @@ const getAirtableData = async () => {
     );
     const data = await response.json();
     console.log(data);
+    for (var i = 0; i < data.records.length; i++) {
+    console.log(i);
+    }
   } catch (error) {
     console.log(error);
   }
 };
 
 getAirtableData();
+
+
 
 /* Function to change theme {Dark | Light}. TIPS -> classList.Toggle()*/
 
