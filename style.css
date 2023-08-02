@@ -42,6 +42,7 @@
   .container {
     font-size: var(--font-size-tablet);
     background-color: var(--main-bg-color-dark);
+    color: var(--main-font-color-light)
   }
 }
 
@@ -50,5 +51,6 @@
   .container {
     font-size: var(--font-size-desktop);
     background-color: var(--main-bg-color-light);
+    color: var(--main-font-color-light)
   }
 }
