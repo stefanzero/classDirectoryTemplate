@@ -2,11 +2,7 @@
 
 
 :root {
-    --light: 0;
-    --light: 0;
     --max-width-post: 420px;
-    --primary: #0075FF; /* Calculated hexadecimal value for HSL(64, 77%, 79%) */
-    --bg: #3B0EA1; /* Calculated hexadecimal value for HSL(284, 70%, 23%) */
     --text-primary: #F5F7FA; /* Calculated hexadecimal value for HSL(60, 19%, 97%) */
     --font-size-sm: clamp(0.7rem, 0.91vw + 0.47rem, 1.2rem);
     --font-size-base: clamp(0.88rem, 1.14vw + 0.59rem, 1.5rem);
