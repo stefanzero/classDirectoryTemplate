@@ -1,120 +1,50 @@
-#menu {
-  z-index: 2;
-  transform: translateY(190px);
-
-}
-
-#menu-bar {
-  width: 45px;
-  margin: 30px 0 20px 20px;
-  cursor: pointer;
-}
-
-.bar {
-  height: 5px;
+hr {
+  display: block;
+  margin: 50px 0 -15px;
   width: 100%;
-  background-color: #120d27;
+  height: 1px;
+  border: 0;
+  background-color: rgb(0, 0, 0);
+  height: 2.5px;
+}
+
+hr + h2 {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin: 0;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  transform: translateX(-50%);
+  color: #010d03;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+hr + h2::first-letter {
+  margin-left: 0.32em;
+}
+
+/* Alternative transform: translate */
+hr + h2 {
+  border-width: 2.5px 0;
+}
+hr + h2::before,
+hr + h2::after {
   display: block;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-#bar1 {
-  transform: translateY(-4px);
-}
-
-#bar3 {
-  transform: translateY(4px);
-}
-
-.nav {
-  transition: 0.3s ease;
-  display: none;
-
-}
-
-.nav ul {
-  padding: 0 22px;
-}
-
-.nav li {
-  list-style: none;
-  padding: 10px 0;
-}
-
-.nav li a {
-  color: rgb(12, 5, 5);
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.nav li a:hover {
-  font-weight: bold;
-}
-
-.menu-bg,
-#menu {
-  top: 0;
-  left: 0;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #453986;
+  content: "";
 }
-
-.menu-bg {
-  z-index: 1;
-  width: 0;
-  height: 100px;
-  margin: 320px 0 0 0;
-  background: radial-gradient(circle, #643fef, #643fef);
-  border-radius: 60% 20%;
-  transition: 0.3s ease;
+hr + h2::before {
+  left: 0;
 }
-
-.change {
-  display: block;
-}
-
-.change .bar {
-  background-color: white;
-}
-
-.change #bar1 {
-  transform: translateY(4px) rotateZ(-45deg);
-}
-
-.change #bar2 {
-  opacity: 0;
-}
-
-.change #bar3 {
-  transform: translateY(-6px) rotateZ(45deg);
-}
-
-
-
-/* Media Query for Larger Screens */
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-    border-radius: 5px 10px;
-    margin: 0;
-    padding: 0;
-    opacity: 1;
-    margin-left: 100px;
-    margin-top: -65px;
-
-  }
-
-  .nav ul {
-    display: flex;
-  }
-
-  .nav li {
-    padding: 12px 15px;
-    justify-content: center;
-
-  }
-
-  .change-bg {
-    display: none;
-  }
+hr + h2::after {
+  right: 0;
 }

@@ -23,6 +23,32 @@
     --link-color: 0;
 }
 
+/*MOBILE PHONES*/
+@media only screen and (max-width: 480px) {
+    .container {
+        font-size: var(--font-size-mobile);
+        /* background-color: var(--main-bg-color-light); */
+        color: var(--main-font-color-dark);
+    }
+}
+
+/* TABLETS */
+@media only screen and (min-width: 72px) {
+    .container {
+        font-size: var(--font-size-tablet);
+        /* background-color: var(--main-bg-color-dark); */
+    }
+}
+
+/* LAPTOPS | DESKTOPS */
+@media only screen and (min-width: 998px) {
+    .container {
+        font-size: var(--font-size-desktop);
+        /* background-color: var(--main-bg-color-light); */
+    }
+}
+
+
 
 .logo-container {
     display: flex;
