@@ -1,18 +1,17 @@
 .footer-container {
-  flex: 1;
-  display: flex;
-  justify-content: left;
   position: fixed;
-  bottom: 0;
   left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(61, 154, 111);
+  color: white;
+  text-align: center;
 }
 
 
 .toggle-container {
   display: flex;
-  /* Ensure the container uses flex layout */
   justify-content: flex-end;
-  /* Align items to the right */
 }
 
 /* Light mode styles */
