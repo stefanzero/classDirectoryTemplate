@@ -57,24 +57,18 @@ getAirtableData();
 */
 
 
-/* sidebar */
+/* siding bar */
 function menuOnClick() {
   document.getElementById("menu-bar").classList.toggle("change");
   document.getElementById("nav").classList.toggle("change");
   document.getElementById("menu-bg").classList.toggle("change-bg");
-}
 
-// Call the resetMenu function when the window resizes
-window.addEventListener("resize", resetMenu);
-
-function resetMenu() {
-  if (window.innerWidth >= 900) {
-    document.getElementById("menu-bar").style.display = 'flex';
-  } else {
-    document.getElementById("menu-bar").style.display = 'none';
+  function resetMenu() {
+    if (window.innerWidth >= 900) {
+      document.getElementById(menu - bar).style.display = 'flex'
+    }
   }
 }
-
 
 
 
