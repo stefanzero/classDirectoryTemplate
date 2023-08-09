@@ -39,7 +39,7 @@
 
 .nav li {
   list-style: none;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .nav li a {
@@ -74,7 +74,7 @@
 }
 
 .change .bar {
-  background-color: white;
+  background-color: black;
 }
 
 .change #bar1 {
