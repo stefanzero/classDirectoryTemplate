@@ -1,6 +1,6 @@
 
 .testimonial-box {
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
     background-color: #efefef;
     overflow: hidden;
@@ -19,7 +19,6 @@
     opacity: 0;
     animation: showTestimonials 0.3s 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
     justify-content: center;
-    margin-left: 25%;
 }
 
 .testimonials input {
