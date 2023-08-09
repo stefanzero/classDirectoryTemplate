@@ -6,7 +6,9 @@
   background-color: rgb(61, 154, 111);
   color: white;
   text-align: center;
+  z-index: 1000;
 }
+
 
 
 .toggle-container {
