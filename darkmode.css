@@ -23,11 +23,6 @@ footer {
   align-items: center;
 }
 
-/* Dark mode styles */
-body.dark-mode {
-  background-color: #222;
-  color: #fff;
-}
 
 .dark-mode footer {
   background-color: #333;
