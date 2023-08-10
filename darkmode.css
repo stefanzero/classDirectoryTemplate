@@ -23,12 +23,6 @@ footer {
   align-items: center;
 }
 
-
-.dark-mode footer {
-  background-color: #333;
-  color: #fff;
-}
-
 .switch {
   position: relative;
   display: inline-block;
