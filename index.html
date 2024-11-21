@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="./style.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/2961dbb4cf.js"
@@ -11,7 +18,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Cohort #21</title>
     <template id="article-template">
-      <div class="col-md-4 col-sm-6 col-xs-12">
         <article class="material-card">
           <h2>
             <span class="mc-name"></span>
@@ -71,20 +77,19 @@
             ></a>
           </div>
         </article>
-      </div>
     </template>
     <template id="testimonial-template">
-        <div class="testimonial-photo">
-          <div class="photo-background"></div>
-          <div class="photo-author"></div>
-        </div>
-        <div class="testimonial-text">
-          <p>
-            <br />
-            <span class="testimonial-span"></span>
-          </p>
-        </div>
-        <div class="testimonial-author">Benedicto Navarro</div>
+      <div class="testimonial-photo">
+        <div class="photo-background"></div>
+        <div class="photo-author"></div>
+      </div>
+      <div class="testimonial-text">
+        <p>
+          <br />
+          <span class="testimonial-span"></span>
+        </p>
+      </div>
+      <div class="testimonial-author">Benedicto Navarro</div>
     </template>
     <script src="./scripts/script.js" async defer></script>
     <script src="./scripts/template.js" async defer></script>
@@ -267,7 +272,7 @@
     </div>
 
     <!--Cards for each members in the cohort in alphabetical order-->
-    <section class="apprenticeship">
+    <section class="apprenticeship container">
       <div class="row active-with-click" id="apprenticeship"></div>
     </section>
 
@@ -298,8 +303,7 @@
           id="input-testimonial13"
           checked
         />
-        <div class="testimonials-inner" id="testimonials-container">
-        </div>
+        <div class="testimonials-inner" id="testimonials-container"></div>
 
         <div class="testimonials-arrows">
           <div class="arrow arrow-left">
