@@ -40,7 +40,7 @@ const images = [
 ];
 
 /*
-Data to be added to Airtable
+Hard-coded data that is now in Airtable
 */
 
 const students = [
@@ -238,6 +238,35 @@ const students = [
   },
 ];
 
+const fetchStudents = async () => {
+  //
+  const airTableStudentTableURL =
+    'https://airtable.com/app1iHuo66LG7u6ph/tblrxzhqvqH6nIpOC/viwXnfFBPvGWUh9Eb';
+  const token =
+    'patj21ucPmKJFydxq.8b07e8fea9b4b13a5ac2816bedb3deaac7faad15da0dcc9a1e1d1dc5dc8776e7';
+
+  const parts = airTableStudentTableURL.split('/');
+  const baseId = parts[3];
+  const tableId = parts[4];
+  let response;
+  try {
+    response = await fetch(`https://api.airtable.com/v0/${baseId}/${tableId}`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log(JSON.stringify(data.records, null, 2));
+    const students = data.records.map((record) => record.fields);
+    return students;
+  } catch (error) {
+    console.error('Error fetching table:', error);
+  }
+};
+
 const testimonials = [
   {
     text: 'Great introduction into the world of IT and coding. I have a new found appreciation for front-end developers as I find myself nitpicking webpages when texts/photos aren’t aligned properly.',
@@ -296,7 +325,7 @@ const testimonials = [
 const container = document.getElementById('apprenticeship');
 const articleTemplate = document.getElementById('article-template');
 
-const addStudents = () => {
+const addStudents = (students) => {
   students.forEach((student) => {
     const article = articleTemplate.content.cloneNode(true);
     const column = document.createElement('div');
@@ -329,5 +358,11 @@ const addTestimonials = () => {
     testimonialsContainer.appendChild(div);
   });
 };
-addStudents();
-addTestimonials();
+
+async function run() {
+  const students = await fetchStudents();
+  addStudents(students);
+  addTestimonials();
+}
+
+run();
