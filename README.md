@@ -25,7 +25,7 @@ Team 2 will be responsible for deciding what data will be included and writing t
 
 The purpose of this project is to give a working example of using the HTML `<template>` tag to replace repeated blocks of HTML.
 
-Here, we are using the project for [Cohort 23](https://class-directory.glitch.me/) as the base, and refactoring the HTML using the template tag.
+Here, we are using the project for [Cohort 21](https://dm-summer23-cohort21.glitch.me/) as the base, and refactoring the HTML using the template tag.
 
 There are 2 repeated HTML blocks:
 
