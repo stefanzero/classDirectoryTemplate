@@ -365,4 +365,4 @@ async function run() {
   addTestimonials();
 }
 
-run();
+document.addEventListener('DOMContentLoaded', run);
